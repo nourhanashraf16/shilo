@@ -1,38 +1,313 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #000;
+  overflow-x: hidden;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.preloader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+/* start logos section */
+.logos {
+  padding: 50px 0;
+}
+.logos img {
+  width: 120px;
+  opacity: 0.3;
+}
+.logos .piller {
+  width: 75px;
+}
+.logos .apex {
+  width: 160px;
+}
+.logos span {
+  color: #f87765;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.logos .box {
+  padding: 14px 0;
+}
+.logos .row {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .logos .row {
+    flex-direction: column;
+    align-items: baseline;
+  }
+  .logos .container-fluid {
+    display: flex;
+    justify-content: center;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* end logos section */
+/* start dream section */
+.dream {
+  padding: 80px 0;
+}
+.dream .dream-left {
+  position: relative;
+}
+.dream .waves {
+  width: 100%;
+}
+.dream .human {
+  left: 15%;
+  position: absolute;
+  width: 85%;
+  top: 21%;
+}
+.dream .content {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+}
+.dream p {
+  font-size: 22px;
+  margin-top: 19px;
+  line-height: 1.3;
+  font-weight: 500;
+}
+.dream span {
+  color: #f87765;
+}
+@media (max-width: 768px) {
+  .dream p {
+    font-size: 18px;
+    font-weight: 400;
+  }
+}
+/* end dream section */
+/* start latest builds section */
+.latest-builds {
+  padding: 80px 0;
+}
+.latest-builds .heading {
+  display: flex;
+  align-items: center;
+}
+.latest-builds .heading h1 {
+  font-weight: 600;
+  font-size: 40px;
+}
+.latest-builds .heading a {
+  margin-left: 35px;
+  font-size: 18px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  color: #f87765;
+}
+.latest-builds .heading a i {
+  margin-left: 10px;
+}
+/* swiper */
+/* pagination */
+.latest-builds .swiper-pagination-bullet {
+  background-color: #f87765 !important;
+  width: 15px !important;
+  height: 15px !important;
+}
+.latest-builds .swiper-pagination {
+  bottom: 0 !important;
+}
+.latest-builds .swiper .swiper-slide {
+  padding: 20px;
+}
+.latest-builds .swiper .swiper-slide img {
+  width: 320px;
+  border-radius: 8px;
+}
+/* end latest builds section */
+/* start how-done */
+.how-done {
+  padding: 80px 0;
+}
+.how-done .container-fluid {
+  position: relative;
+}
+.how-done .container-fluid .waves {
+  position: absolute;
+  width: 50%;
+  left: 25%;
+  height: 80%;
+  top: 10%;
+  object-fit: contain; /*resized to fit within the given dimension*/
+}
+.how-done h1 {
+  padding: 16px;
+  font-size: 40px;
+}
+.how-done .content {
+  border-radius: 15px;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+.how-done .content .parent {
+  display: flex;
+  align-items: center;
+  background-color: rgba(248, 119, 101, 0.2);
+  padding: 12px;
+  border-radius: 15px;
+}
+
+.how-done .content .parent img {
+  width: 37px;
+  margin-right: 16px;
+}
+.how-done .content .parent p {
+  font-size: 18px;
+  font-weight: 500;
+}
+/* end how-done */
+/* start services */
+.services {
+  padding: 80px 0;
+}
+.services h1 {
+  padding: 16px;
+  font-size: 40px;
+}
+.services .content .child {
+  background-color: rgba(248, 119, 101, 0.2);
+  padding: 0 12px;
+  min-height: 600px;
+  border-radius: 20px;
+}
+.services .content .child h6 {
+  padding: 20px 0;
+  font-size: 22px;
+  color: #f87765 !important;
+}
+.services .content .child h4 {
+  margin: 10px 0 20px;
+  font-size: 20px !important;
+}
+.services .content .child .img-content {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.services .content .child img {
+  width: 80%;
+  border-radius: 10px;
+  height: 300px;
+  object-fit: contain;
+}
+.services .content .child p {
+  padding: 20px 0;
+}
+@media (max-width: 768px) {
+  .services .content .child {
+    margin-bottom: 25px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .services .content .child {
+    min-height: 690px;
+  }
+}
+/* end services */
+/* start contact us */
+.contact-us {
+  padding: 80px 0;
+}
+.contact-us h1 {
+  padding: 16px;
+  font-size: 40px;
+}
+.contact-us .left-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact-us .left-div ul {
+  padding-left: 0;
+  list-style: none;
+}
+.contact-us .left-div ul li {
+  padding: 13px 0;
+  font-size: 25px;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.contact-us .left-div ul li span {
+  color: #f87765;
+}
+.contact-us .left-div ul li h5 {
+  display: inline;
+  margin-left: 9px;
+  font-size: 23px;
+}
+.contact-us form input {
+  border: 1px solid #f87765;
+  background-color: #000;
+  border-radius: 50px;
+  padding: 12px 25px;
+  font-size: 22px;
+  margin: 12px 0;
+  color: white;
+  width: 47%;
+  outline: none;
+}
+.contact-us form input::placeholder {
+  color: white !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.contact-us form .content {
+  display: flex;
+  justify-content: space-between;
+}
+.contact-us form textarea {
+  width: 100%;
+  margin: auto;
+  border: 1px solid #f87765;
+  background-color: #000;
+  border-radius: 50px;
+  padding: 10px 15px 0 15px;
+  font-size: 22px;
+  color: white;
+  outline: none;
+}
+.contact-us form textarea::placeholder {
+  vertical-align: middle;
+  color: white !important;
+}
+.contact-us form .btn {
+  width: 194px;
+  background-color: rgba(248, 118, 101, 0.463);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 5px 2px;
+  margin: auto;
+  margin-top: 45px;
+}
+@media (max-width: 768px) {
+  .contact-us form .content {
+    flex-direction: column;
+    align-items: center;
   }
-  to {
-    transform: rotate(360deg);
+  .contact-us form input {
+    width: 80%;
+  }
+  .contact-us form textarea {
+    width: 80%;
+  }
+}
+/* end contact us */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 26px !important;
+    font-weight: 500;
   }
 }

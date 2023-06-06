@@ -1,0 +1,84 @@
+.header {
+  margin-top: 65px;
+  padding: 100px 0;
+}
+.header .content h1 {
+  font-size: 45px;
+  letter-spacing: -1px;
+}
+.header .content h1 span {
+  color: #f87765;
+}
+.header .content p {
+  font-size: 25px;
+  font-weight: 600;
+  margin: 30px 0;
+}
+.bttn {
+  background-color: #f87765;
+  border-color: #f87765;
+  padding: 5px 23px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  border-radius: 8px;
+}
+.bttn:hover {
+  background-color: rgba(248, 119, 101, 0.2);
+  border-color: rgba(248, 119, 101, 0.2);
+}
+.header .parent-imgs {
+  position: relative;
+}
+.header .parent-imgs .waves {
+  width: 420px;
+}
+.header .parent-imgs .laptop {
+  width: 350px;
+  position: absolute;
+  top: -6px;
+  left: 52px;
+}
+.header .parent-img {
+  display: flex;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(248, 119, 101, 0.2);
+  box-shadow: 1px 1px 3px 0 rgba(7, 7, 7, 0.15);
+  border-radius: 8px;
+}
+.header .parent-img img {
+  width: 40px;
+}
+.header .wimg {
+  left: 227px;
+  top: 7px;
+}
+.header .ximg {
+  top: 70px;
+  left: 27px;
+}
+.header .yimg {
+  top: 210px;
+  left: 296px;
+}
+.header .zimg {
+  top: 260px;
+  left: 130px;
+}
+@media (max-width: 992px) {
+  .header .content h1 {
+    font-size: 35px;
+  }
+  .header .content p {
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .right-header {
+    margin-top: 100px;
+  }
+}
