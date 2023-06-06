@@ -55,7 +55,7 @@ body {
 /* end logos section */
 /* start dream section */
 .dream {
-  padding: 80px 0;
+  padding: 40px 0;
 }
 .dream .dream-left {
   position: relative;
@@ -91,7 +91,7 @@ body {
 /* end dream section */
 /* start latest builds section */
 .latest-builds {
-  padding: 80px 0;
+  padding: 40px 0;
 }
 .latest-builds .heading {
   display: flex;
@@ -131,7 +131,7 @@ body {
 /* end latest builds section */
 /* start how-done */
 .how-done {
-  padding: 80px 0;
+  padding: 40px 0;
 }
 .how-done .container-fluid {
   position: relative;
@@ -172,7 +172,7 @@ body {
 /* end how-done */
 /* start services */
 .services {
-  padding: 80px 0;
+  padding: 40px 0;
 }
 .services h1 {
   padding: 16px;
@@ -220,7 +220,7 @@ body {
 /* end services */
 /* start contact us */
 .contact-us {
-  padding: 80px 0;
+  padding: 40px 0;
 }
 .contact-us h1 {
   padding: 16px;
@@ -228,7 +228,6 @@ body {
 }
 .contact-us .left-div {
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 .contact-us .left-div ul {
@@ -249,15 +248,15 @@ body {
   font-size: 23px;
 }
 .contact-us form input {
-  border: 1px solid #f87765;
   background-color: #000;
+  border: 1px solid #f87765;
   border-radius: 50px;
-  padding: 12px 25px;
-  font-size: 22px;
+  color: #fff;
+  font-size: 17px;
   margin: 12px 0;
-  color: white;
-  width: 47%;
   outline: none;
+  padding: 6px 16px;
+  width: 47%;
 }
 .contact-us form input::placeholder {
   color: white !important;
@@ -268,15 +267,14 @@ body {
   justify-content: space-between;
 }
 .contact-us form textarea {
-  width: 100%;
-  margin: auto;
   border: 1px solid #f87765;
   background-color: #000;
-  border-radius: 50px;
-  padding: 10px 15px 0 15px;
-  font-size: 22px;
+  border-radius: 8px;
+  font-size: 17px;
   color: white;
   outline: none;
+  padding: 6px 16px;
+  width: 47%;
 }
 .contact-us form textarea::placeholder {
   vertical-align: middle;
@@ -292,22 +290,40 @@ body {
   margin: auto;
   margin-top: 45px;
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 992px) {
+  .contact-us .left-div ul li {
+    font-size: 20px;
+  }
+  .contact-us .left-div ul li h5 {
+    font-size: 18px;
+  }
   .contact-us form .content {
     flex-direction: column;
     align-items: center;
   }
   .contact-us form input {
-    width: 80%;
+    width: 70%;
+  }
+  .contact-us form .box {
+    width: 70%;
+    margin: auto;
   }
   .contact-us form textarea {
-    width: 80%;
+    width: 100%;
   }
 }
 /* end contact us */
-@media (max-width: 768px) {
-  h1 {
-    font-size: 26px !important;
-    font-weight: 500;
+@media screen and (max-width: 768px) {
+  .latest-builds .heading h1 {
+    font-size: 30px;
+  }
+  .how-done h1 {
+    font-size: 30px;
+  }
+  .services h1 {
+    font-size: 30px;
+  }
+  .contact-us h1 {
+    font-size: 30px;
   }
 }

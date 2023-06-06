@@ -13,6 +13,7 @@
 .projects .card {
   background-color: #1d1d1f;
   padding: 25px;
+  margin-bottom: 25px;
 }
 .projects .card .card-img-top {
   border-radius: 8px;

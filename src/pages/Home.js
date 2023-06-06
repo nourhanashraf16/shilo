@@ -273,8 +273,8 @@ const Home = () => {
                   <input type="email" placeholder="Email" name="Email" />
                   <input type="Phone" placeholder="Phone" name="Phone" />
                 </div>
-                <div className="d-flex justify-content-center">
-                  <textarea placeholder="Message"></textarea>
+                <div className="box">
+                  <textarea placeholder="Message" rows={5}></textarea>
                 </div>
                 <input
                   type="submit"
